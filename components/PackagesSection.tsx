@@ -75,10 +75,10 @@ const PackagesSection: React.FC = () => {
                     </div>
                 ))}
             </div>
-             <div className="mt-12 max-w-3xl mx-auto text-center text-xs text-brand-subtle bg-brand-bg-alt p-4 rounded-lg animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
-                <h4 className="font-bold text-sm text-brand-text mb-2">Notes</h4>
-                <p className="mb-1">All ad budgets are included in the package price.</p>
-                <p>Influencer collaborations follow a barter system where applicable — product cost (if any) to be borne by the cafe/restaurant.</p>
+             <div className="mt-12 max-w-3xl mx-auto text-center text-brand-text bg-brand-bg-alt p-6 rounded-lg animate-fadeInUp border border-brand-border" style={{ animationDelay: '0.8s' }}>
+                <h4 className="font-bold font-serif text-lg text-brand-dark-blue mb-3">Notes</h4>
+                <p className="mb-2 font-semibold text-base">All ad budgets are included in the package price.</p>
+                <p className="font-semibold text-base">Influencer collaborations follow a barter system where applicable — product cost (if any) to be borne by the cafe/restaurant.</p>
             </div>
         </div>
     );
