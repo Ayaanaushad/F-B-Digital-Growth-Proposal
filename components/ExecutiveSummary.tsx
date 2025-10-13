@@ -11,7 +11,7 @@ const ExecutiveSummary: React.FC = () => {
             </p>
             <div className="mt-8 text-lg text-brand-text leading-relaxed space-y-4">
                 <p>
-                    Omni Astra Pvt. Ltd. stands as a prestigious and trusted brand with strong authority in its space. However, your digital identity does not yet reflect the same level of influence and excellence. This gap limits growth and engagement opportunities. With the right digital transformation, your online presence can truly mirror the strength and stature your brand already commands.
+                    Your company stands as a prestigious and trusted brand with strong authority in its space. However, your digital identity does not yet reflect the same level of influence and excellence. This gap limits growth and engagement opportunities. With the right digital transformation, your online presence can truly mirror the strength and stature your brand already commands.
                 </p>
             </div>
             

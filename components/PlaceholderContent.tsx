@@ -15,7 +15,7 @@ const PlaceholderContent: React.FC<PlaceholderContentProps> = ({ title }) => {
       </p>
       <div className="mt-8 text-lg text-brand-text leading-relaxed bg-slate-100 p-8 rounded-lg border border-brand-border">
         <p>
-          Content for the <span className="font-semibold">{title}</span> section is being prepared and will be available soon. This area will contain in-depth information, charts, and strategic recommendations tailored to OMNI ASTRA's market dominance goals.
+          Content for the <span className="font-semibold">{title}</span> section is being prepared and will be available soon. This area will contain in-depth information, charts, and strategic recommendations tailored to your market dominance goals.
         </p>
       </div>
       <style>{`
