@@ -64,32 +64,25 @@ const PackagesSection: React.FC = () => {
     ];
 
     return (
-        <div className="animate-fade-in">
-            <div className="text-center max-w-3xl mx-auto">
+        <div>
+            <div className="text-center max-w-3xl mx-auto animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
                 <h2 className="text-4xl font-serif font-bold text-brand-dark-blue">Packages & Deliverables</h2>
                 <p className="mt-2 text-lg text-brand-subtle">
                     Choose a plan that scales with your ambition. All-inclusive pricing for transparent results.
                 </p>
             </div>
             <div className="mt-12 max-w-6xl mx-auto grid gap-8 lg:grid-cols-3 items-stretch">
-                {packages.map(pkg => (
-                    <PackageCard key={pkg.price} {...pkg} />
+                {packages.map((pkg, index) => (
+                    <div key={pkg.price} className="animate-fadeInUp" style={{ animationDelay: `${0.3 + index * 0.15}s` }}>
+                        <PackageCard {...pkg} />
+                    </div>
                 ))}
             </div>
-             <div className="mt-12 max-w-3xl mx-auto text-center text-xs text-brand-subtle bg-brand-bg-alt p-4 rounded-lg">
+             <div className="mt-12 max-w-3xl mx-auto text-center text-xs text-brand-subtle bg-brand-bg-alt p-4 rounded-lg animate-fadeInUp" style={{ animationDelay: '0.8s' }}>
                 <h4 className="font-bold text-sm text-brand-text mb-2">Notes</h4>
                 <p className="mb-1">All ad budgets are included in the package price.</p>
                 <p>Influencer collaborations follow a barter system where applicable — product cost (if any) to be borne by the cafe/restaurant.</p>
             </div>
-            <style>{`
-                @keyframes fade-in {
-                    from { opacity: 0; transform: translateY(10px); }
-                    to { opacity: 1; transform: translateY(0); }
-                }
-                .animate-fade-in {
-                    animation: fade-in 0.5s ease-out forwards;
-                }
-            `}</style>
         </div>
     );
 };

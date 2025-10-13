@@ -34,20 +34,32 @@ const ImpactCard: React.FC<{ title: string; items: string[] }> = ({ title, items
 
 const DefiningSuccessSection: React.FC = () => {
     return (
-        <div className="max-w-5xl mx-auto animate-fade-in">
-            <h2 className="text-4xl font-serif font-bold text-brand-dark-blue">
+        <div className="max-w-5xl mx-auto">
+            <h2 
+                className="text-4xl font-serif font-bold text-brand-dark-blue animate-fadeInUp"
+                style={{ animationDelay: '0.1s' }}
+            >
                 Defining Success the Right Way
             </h2>
-            <p className="mt-2 text-lg text-brand-subtle">
+            <p 
+                className="mt-2 text-lg text-brand-subtle animate-fadeInUp"
+                style={{ animationDelay: '0.2s' }}
+            >
                 From Vanity Metrics to Real Business Impact
             </p>
-            <div className="mt-8 text-lg text-brand-text leading-relaxed">
+            <div 
+                className="mt-8 text-lg text-brand-text leading-relaxed animate-fadeInUp"
+                style={{ animationDelay: '0.3s' }}
+            >
                 <p>
                     Most cafes and restaurants judge online success by likes and followers. But true growth isn’t measured in vanity metrics — it’s measured in footfall, orders, and loyal regulars.
                 </p>
             </div>
 
-            <div className="mt-12 grid md:grid-cols-3 gap-8 items-center">
+            <div 
+                className="mt-12 grid md:grid-cols-3 gap-8 items-center animate-fadeInUp"
+                style={{ animationDelay: '0.4s' }}
+            >
                 <MetricCard title="Common Online Metrics" items={["Followers", "Likes & Comments", "Collabs with influencers", "Story views"]} />
                 <div className="text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-400 mx-auto transform md:rotate-0 rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1">
@@ -56,16 +68,6 @@ const DefiningSuccessSection: React.FC = () => {
                 </div>
                 <ImpactCard title="Real Business Impact" items={["Actual discovery / new people walking in", "Increase in footfall", "Offers being redeemed", "Better Google reviews & reputation"]} />
             </div>
-            
-            <style>{`
-                @keyframes fade-in {
-                    from { opacity: 0; transform: translateY(10px); }
-                    to { opacity: 1; transform: translateY(0); }
-                }
-                .animate-fade-in {
-                    animation: fade-in 0.5s ease-out forwards;
-                }
-            `}</style>
         </div>
     );
 };

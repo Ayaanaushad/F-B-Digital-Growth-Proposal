@@ -24,27 +24,30 @@ const StrategySection: React.FC = () => {
     ];
 
     return (
-        <div className="max-w-4xl mx-auto animate-fade-in">
-            <h2 className="text-4xl font-serif font-bold text-brand-dark-blue">
+        <div className="max-w-4xl mx-auto">
+            <h2 
+                className="text-4xl font-serif font-bold text-brand-dark-blue animate-fadeInUp"
+                style={{ animationDelay: '0.1s' }}
+            >
                 How We Get There
             </h2>
-            <p className="mt-2 text-lg text-brand-subtle">
+            <p 
+                className="mt-2 text-lg text-brand-subtle animate-fadeInUp"
+                style={{ animationDelay: '0.2s' }}
+            >
                 A 5-Point Plan to Move from Online Views to Offline Visits
             </p>
              <div className="mt-10 grid gap-6 sm:grid-cols-1">
-                {strategies.map(strategy => (
-                    <StrategyItem key={strategy.title} {...strategy} />
+                {strategies.map((strategy, index) => (
+                    <div 
+                        key={strategy.title} 
+                        className="animate-fadeInUp" 
+                        style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+                    >
+                        <StrategyItem {...strategy} />
+                    </div>
                 ))}
             </div>
-            <style>{`
-                @keyframes fade-in {
-                    from { opacity: 0; transform: translateY(10px); }
-                    to { opacity: 1; transform: translateY(0); }
-                }
-                .animate-fade-in {
-                    animation: fade-in 0.5s ease-out forwards;
-                }
-            `}</style>
         </div>
     );
 };
