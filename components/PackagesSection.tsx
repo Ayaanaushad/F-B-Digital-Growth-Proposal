@@ -49,9 +49,6 @@ const PackageCard: React.FC<Package> = ({ price, posts, stories, shootDays, infl
                     </div>
                 </div>
             </div>
-            <button className={`w-full mt-6 py-2.5 rounded-lg font-semibold transition-colors duration-300 ${isPopular ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-slate-100 text-brand-dark-blue hover:bg-slate-200'}`}>
-                Select Plan
-            </button>
         </div>
     );
 };
