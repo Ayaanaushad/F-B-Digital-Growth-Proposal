@@ -21,6 +21,7 @@ const StrategySection: React.FC = () => {
         { title: 'Offer-Driven Engagement Loops', description: 'Special perks for those who interact online → directly driving store visits.' },
         { title: 'Niche Food Influencer Collaborations', description: 'Right creators, not just big names — selected on local relevance, not follower count.' },
         { title: 'Daily Story Activity', description: 'Staying visible daily without being repetitive — menus, behind-the-scenes, live updates, polls.' },
+        { title: 'Google Review Campaign', description: 'Building social proof through authentic feedback — encouraging satisfied customers to share their experience online.' },
     ];
 
     return (
@@ -35,7 +36,7 @@ const StrategySection: React.FC = () => {
                 className="mt-2 text-lg text-brand-subtle animate-fadeInUp"
                 style={{ animationDelay: '0.2s' }}
             >
-                A 5-Point Plan to Move from Online Views to Offline Visits
+                A 6-Point Plan to Move from Online Views to Offline Visits
             </p>
              <div className="mt-10 grid gap-6 sm:grid-cols-1">
                 {strategies.map((strategy, index) => (
