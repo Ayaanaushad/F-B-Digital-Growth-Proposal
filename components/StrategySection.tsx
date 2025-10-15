@@ -17,11 +17,11 @@ const StrategyItem: React.FC<StrategyItemProps> = ({ title, description }) => {
 const StrategySection: React.FC = () => {
     const strategies = [
         { title: 'Instagram Marketing (Organic + Paid)', description: 'Consistent feed + strategic boosting to reach people actually nearby.' },
+        { title: 'Google Review Campaign', description: 'Building social proof through authentic feedback — encouraging satisfied customers to share their experience online.' },
         { title: 'In-House Branding Support', description: 'Ensuring the physical space matches the online identity — familiarity builds loyalty.' },
         { title: 'Offer-Driven Engagement Loops', description: 'Special perks for those who interact online → directly driving store visits.' },
         { title: 'Niche Food Influencer Collaborations', description: 'Right creators, not just big names — selected on local relevance, not follower count.' },
         { title: 'Daily Story Activity', description: 'Staying visible daily without being repetitive — menus, behind-the-scenes, live updates, polls.' },
-        { title: 'Google Review Campaign', description: 'Building social proof through authentic feedback — encouraging satisfied customers to share their experience online.' },
     ];
 
     return (
